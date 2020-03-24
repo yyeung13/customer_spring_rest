@@ -1,4 +1,4 @@
-package com.howtodoinjava.demo.security.apiToken;
+package demo.bank.customer.security.apiToken;
 
 import javax.servlet.http.HttpServletRequest;
 
