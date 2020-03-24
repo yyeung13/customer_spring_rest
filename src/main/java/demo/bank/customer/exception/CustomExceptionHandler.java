@@ -1,4 +1,4 @@
-package com.howtodoinjava.demo.exception;
+package demo.bank.customer.exception;
 
 import java.util.ArrayList;
 import java.util.List;
