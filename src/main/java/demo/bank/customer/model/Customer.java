@@ -43,7 +43,8 @@ public class Customer implements Serializable {
   @NotEmpty(message = "Bank must not be empty")
 	private String bank;
   
-  
+    @NotEmpty(message = "IC must not be empty")
+	private String ic;
   
 	@NotEmpty(message = "Email must not be empty")
 	@Email(message = "Email must be a valid email address")
@@ -113,6 +114,14 @@ public class Customer implements Serializable {
 
 	public void setBank(String bank) {
 		this.bank = bank;
+	}
+	
+	public String getIC() {
+		return ic;
+	}
+
+	public void setIC(String ic) {
+		this.ic = ic;
 	}
 
   public String getEmail() {
