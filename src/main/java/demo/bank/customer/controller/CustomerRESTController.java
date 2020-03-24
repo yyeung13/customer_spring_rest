@@ -40,7 +40,7 @@ public class CustomerRESTController {
 	@GetMapping("/getCustomer/{name}/{ic}/{bank}")
 	Customer getCustomerByNameAndICAndBank(@PathVariable String name, @PathVariable String ic, @PathVariable String bank)
 	{
-	    return repository.findById(name, ic, bank)
+	    return repository.findByNameAndICAndBank(name, ic, bank)
 	            .orElseThrow(() -> new RecordNotFoundException("Customer name '" + name + "' does no exist"));
 	}
 
